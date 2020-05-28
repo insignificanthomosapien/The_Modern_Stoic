@@ -1,0 +1,2 @@
+I created this file to check whether I know git.
+Git is really cool!
