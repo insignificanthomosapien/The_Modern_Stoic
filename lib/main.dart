@@ -15,6 +15,7 @@ import 'QuotesData.dart';
 import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:navigation_bar_example/quotes/quotes.dart';
+import 'package:navigation_bar_example/constants.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,8 +44,6 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   bool isFavorited = false;
   static int selectedIndex = 0;
-
-
 
   //Function to change the state of the favorite button
   void toggleState() {
@@ -99,320 +98,257 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     var num = rng.nextInt(61) + 1;
     QuotesData obj;
 
-    switch(num){
-      case 1: {
+    switch (num) {
+      case 1:
         obj = epictetus;
-      }
-      break;
+        break;
 
-      case 2: {
+      case 2:
         obj = cato;
-      }
-      break;
+        break;
 
-      case 3: {
+      case 3:
         obj = chrysippus;
-      }
-      break;
+        break;
 
-      case 4: {
+      case 4:
         obj = cleanthes;
-      }
-      break;
+        break;
 
-      case 5: {
+      case 5:
         obj = gaius;
-      }
-      break;
+        break;
 
-      case 6: {
+      case 6:
         obj = seneca;
-      }
-      break;
+        break;
 
-      case 7: {
+      case 7:
         obj = marcusAurelius;
-      }
-      break;
+        break;
 
-      case 8: {
+      case 8:
         obj = zeno;
-      }
-      break;
+        break;
 
-      case 9: {
+      case 9:
         obj = aeschines;
-      }
-      break;
+        break;
 
-      case 10: {
+      case 10:
         obj = aeschylus;
-      }
-      break;
+        break;
 
-      case 11: {
+      case 11:
         obj = aesop;
-      }
-      break;
+        break;
 
-      case 12: {
+      case 12:
         obj = agathon;
-      }
-      break;
+        break;
 
-      case 13: {
+      case 13:
         obj = agesilaus;
-      }
-      break;
+        break;
 
-      case 14: {
+      case 14:
         obj = alcaeus;
-      }
-      break;
+        break;
 
-      case 15: {
+      case 15:
         obj = alexander;
-      }
-      break;
+        break;
 
-      case 16: {
+      case 16:
         obj = anacreon;
-      }
-      break;
+        break;
 
-      case 17: {
+      case 17:
         obj = anaxagoras;
-      }
-      break;
+        break;
 
-      case 18: {
+      case 18:
         obj = anaximander;
-      }
-      break;
+        break;
 
-      case 19: {
+      case 19:
         obj = antisthenes;
-      }
-      break;
+        break;
 
-      case 20: {
+      case 20:
         obj = archilochus;
-      }
-      break;
+        break;
 
-      case 21: {
+      case 21:
         obj = archimedes;
-      }
-      break;
+        break;
 
-      case 22: {
+      case 22:
         obj = aristippus;
-      }
-      break;
+        break;
 
-      case 23: {
+      case 23:
         obj = aristophanes;
-      }
-      break;
+        break;
 
-      case 24: {
+      case 24:
         obj = aristotle;
-      }
-      break;
+        break;
 
-      case 25: {
+      case 25:
         obj = bias;
-      }
-      break;
+        break;
 
-      case 26: {
+      case 26:
         obj = bion;
-      }
-      break;
+        break;
 
-      case 27: {
+      case 27:
         obj = chilon;
-      }
-      break;
+        break;
 
-      case 28: {
+      case 28:
         obj = cleobulus;
-      }
-      break;
+        break;
 
-      case 29: {
+      case 29:
         obj = critias;
-      }
-      break;
+        break;
 
-      case 30:{
+      case 30:
         obj = democritus;
-      }
-      break;
+        break;
 
-      case 31: {
+      case 31:
         obj = demosthenes;
-      }
-      break;
+        break;
 
-      case 32: {
+      case 32:
         obj = diogenes;
-      }
-      break;
+        break;
 
-      case 33: {
+      case 33:
         obj = epicharmus;
-      }
-      break;
+        break;
 
-      case 34: {
+      case 34:
         obj = euclid;
-      }
-      break;
+        break;
 
-      case 35: {
+      case 35:
         obj = euripedes;
-      }
-      break;
+        break;
 
-      case 36: {
+      case 36:
         obj = heraclitus;
-      }
-      break;
+        break;
 
-      case 37: {
+      case 37:
         obj = herodotus;
-      }
-      break;
+        break;
 
-      case 38: {
+      case 38:
         obj = hesiod;
-      }
-      break;
+        break;
 
-      case 39: {
+      case 39:
         obj = hippocrates;
-      }
-      break;
+        break;
 
-      case 40: {
-      obj = homer;
-      }
-      break;
+      case 40:
+        obj = homer;
+        break;
 
-      case 41: {
+      case 41:
         obj = isocrates;
-      }
-      break;
+        break;
 
-      case 42: {
+      case 42:
         obj = parmenides;
-      }
-      break;
+        break;
 
-      case 43: {
+      case 43:
         obj = periander;
-      }
-      break;
+        break;
 
-      case 44: {
+      case 44:
         obj = pericles;
-      }
-      break;
+        break;
 
-      case 45: {
+      case 45:
         obj = pindar;
-      }
-      break;
+        break;
 
-      case 46: {
+      case 46:
         obj = pittacus;
-      }
-      break;
+        break;
 
-      case 47: {
+      case 47:
         obj = plato;
-      }
-      break;
+        break;
 
-      case 48: {
+      case 48:
         obj = plutarch;
-      }
-      break;
+        break;
 
-      case 49: {
+      case 49:
         obj = polybius;
-      }
-      break;
+        break;
 
-      case 50: {
+      case 50:
         obj = protagoras;
-      }
-      break;
+        break;
 
-      case 51: {
+      case 51:
         obj = pythagoras;
-      }
-      break;
+        break;
 
-      case 52: {
+      case 52:
         obj = socrates;
-      }
-      break;
+        break;
 
-      case 53: {
+      case 53:
         obj = solon;
-      }
-      break;
+        break;
 
-      case 54: {
+      case 54:
         obj = sophocles;
-      }
-      break;
+        break;
 
-      case 55: {
+      case 55:
         obj = thales;
-      }
-      break;
+        break;
 
-      case 56: {
+      case 56:
         obj = themistocles;
-      }
-      break;
+        break;
 
-      case 57: {
+      case 57:
         obj = theocritus;
-      }
-      break;
+        break;
 
-      case 58: {
+      case 58:
         obj = theognis;
-      }
-      break;
+        break;
 
-      case 59: {
+      case 59:
         obj = theophrastus;
-      }
-      break;
+        break;
 
-      case 60: {
+      case 60:
         obj = thucydides;
-      }
-      break;
+        break;
 
-      case 61: {
+      case 61:
         obj = xenophanes;
-      }
-      break;
+        break;
 
-      case 62: {
+      case 62:
         obj = xenophon;
-      }
-      break;
+        break;
     }
 
     var index = rng.nextInt(obj.getQuotes().length);
-
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -424,7 +360,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 AutoSizeText(
-                      obj.getQuoteAtIndex(index),
+                  obj.getQuoteAtIndex(index),
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Garamond',
@@ -446,7 +382,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 ),
               ],
             ),
-
           ),
         ),
         Divider(height: 30.0),
@@ -475,18 +410,20 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 icon: Icon(Icons.info),
                 tooltip: 'More info',
                 color: Colors.grey.shade700,
-                onPressed: (){
-                  setState((){
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => InfoPage(),
-                        settings: RouteSettings(
-                          arguments: obj,
+                onPressed: () {
+                  setState(
+                    () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => InfoPage(),
+                          settings: RouteSettings(
+                            arguments: obj,
+                          ),
                         ),
-                      ),
-                    );
-                  },);
+                      );
+                    },
+                  );
                 },
                 iconSize: 30.0,
               ),
@@ -499,7 +436,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
-
     //The home screen BottomNavigationBar implementation
     return Scaffold(
       body: Container(
@@ -541,8 +477,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-
-
 //A placeholder widget; landing page for navigation
 class SampleScreen extends StatelessWidget {
   @override
@@ -558,29 +492,29 @@ class SampleScreen extends StatelessWidget {
 }
 
 //Widget for header of StickyHeader
-Widget stickyHeaderContainer(String text){
+Widget stickyHeaderContainer(String text) {
   return Container(
     decoration: BoxDecoration(
       gradient: LinearGradient(
-        begin: Alignment.topRight,
-        end: Alignment.bottomLeft,
-        colors: [Colors.blue.shade50, Colors.blue.shade900]
-      ),
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [Colors.blue.shade50, Colors.blue.shade900]),
     ),
     height: 40.0,
     padding: EdgeInsets.symmetric(horizontal: 16.0),
     alignment: Alignment.centerLeft,
-    child: Text(text,
-    style: TextStyle(
-      color: Colors.white,
-      fontFamily: 'Cinzel',
-      fontWeight: FontWeight.bold,
-    )),
-
+    child: Text(
+      text,
+      style: TextStyle(
+        color: Colors.white,
+        fontFamily: 'Cinzel',
+        fontWeight: FontWeight.bold,
+      ),
+    ),
   );
 }
 
-class AboutPage extends StatelessWidget{
+class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -589,102 +523,40 @@ class AboutPage extends StatelessWidget{
             image: DecorationImage(
               image: AssetImage('assets/red_valley.jpg'),
               fit: BoxFit.cover,
-              colorFilter:
-              ColorFilter.mode(Colors.black.withOpacity(0.6),
-                  BlendMode.dstATop),
-
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.6), BlendMode.dstATop),
             ),
           ),
-
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text('Designed and Developed by',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
-                Divider(height: 20.0,
-                    color: Colors.transparent),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle1),
+                Divider(height: 20.0, color: Colors.transparent),
                 Text('Aqib Ahmed',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w400,
-
-                    )
-                ),
-                Divider(height: 10.0,
-                    color: Colors.transparent),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle1),
+                Divider(height: 10.0, color: Colors.transparent),
                 Text('2020',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
-                Divider(height: 40.0,
-                    color: Colors.transparent),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle1),
+                Divider(height: 40.0, color: Colors.transparent),
                 Text('Image Assets from Unsplash',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
-                Divider(height: 20.0,
-                    color: Colors.transparent),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
+                Divider(height: 20.0, color: Colors.transparent),
                 Text('Thanks To: ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
-
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
                 Divider(height: 10.0, color: Colors.transparent),
                 Text('Jeremy Bishop',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
                 Text('Josh Rose',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
                 Text('Dimitar Donovski',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
                 Text('Sven King',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w400,
-
-                    )),
-
-
-
-              ]
-          )
-      ),
+                    textAlign: TextAlign.center, style: kCreditsTextStyle2),
+              ])),
     );
   }
 }
-
-
-
 
 class InfoPage extends StatefulWidget {
   @override
@@ -692,7 +564,6 @@ class InfoPage extends StatefulWidget {
 }
 
 class _InfoPageState extends State<InfoPage> {
-
   @override
   Widget build(BuildContext context) {
     QuotesData data = ModalRoute.of(context).settings.arguments;
@@ -701,82 +572,79 @@ class _InfoPageState extends State<InfoPage> {
     String death = data.getDeathYear();
     String bio = data.getBio();
     return Scaffold(
-        body: Container(
-          constraints: BoxConstraints.expand(),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/white_background.jpg'),
-              fit: BoxFit.cover,
-              colorFilter:
-              ColorFilter.mode(Colors.black.withOpacity(0.4),
-                  BlendMode.dstATop),
-            ),
+      body: Container(
+        constraints: BoxConstraints.expand(),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/white_background.jpg'),
+            fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(
+                Colors.black.withOpacity(0.4), BlendMode.dstATop),
           ),
-
-          child:
-              CustomScrollView(slivers: <Widget>[
-                SliverAppBar(
-                  pinned: false,
-                  expandedHeight: 500.0,
-                  backgroundColor: Colors.transparent,
-                  flexibleSpace: FlexibleSpaceBar(
-                      background: Image(
-                        image: NetworkImage(data.getImageLink()),
-                        fit: BoxFit.cover,
+        ),
+        child: CustomScrollView(slivers: <Widget>[
+          SliverAppBar(
+            pinned: false,
+            expandedHeight: 500.0,
+            backgroundColor: Colors.transparent,
+            flexibleSpace: FlexibleSpaceBar(
+                background: Image(
+              image: NetworkImage(data.getImageLink()),
+              fit: BoxFit.cover,
+            )),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                Divider(height: 30.0, color: Colors.transparent),
+                Text(
+                  author,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    fontFamily: 'Garamond',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Divider(height: 30.0, color: Colors.transparent),
+                Text(
+                  'Born: $born',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Cinzel',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 15.0,
+                  ),
+                ),
+                Divider(height: 15.0, color: Colors.transparent),
+                Text(
+                  'Died: $death',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Cinzel',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 15.0,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 15.0, vertical: 20.0),
+                  child: Text(bio,
+                      textAlign: TextAlign.justify,
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'Garamond',
                       )),
                 ),
-                  SliverList(
-                    delegate: SliverChildListDelegate(
-                      [
-                        Divider(height: 30.0,
-                        color: Colors.transparent),
-                        Text(author,
-                        textAlign:TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 30.0,
-                            fontFamily: 'Garamond',
-                          fontWeight: FontWeight.bold,
-                        ),
-                        ),
-                        Divider(height: 30.0,
-                            color: Colors.transparent),
-                        Text('Born: $born',
-                        textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontFamily: 'Cinzel',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15.0,
-                          ),),
-                        Divider(height: 15.0,
-                            color: Colors.transparent),
-                        Text('Died: $death',
-                        textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontFamily: 'Cinzel',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 15.0,
-                          ),),
-
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
-                          child: Text(bio,
-                              textAlign: TextAlign.justify,
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w400,
-                            fontFamily: 'Garamond',
-                          )),
-                        ),
-                      ],
-                    ),
-                  ),
-                ]),
+              ],
+            ),
           ),
+        ]),
+      ),
     );
   }
 }
-
-
 
 //This widget is reached when the 'Classical' button is pressed on the bottomnavigationbar
 class LibraryScreen extends StatefulWidget {
@@ -785,7 +653,6 @@ class LibraryScreen extends StatefulWidget {
 }
 
 class _LibraryScreenState extends State<LibraryScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -879,7 +746,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                             Divider(),
                             GestureDetector(
                               child: libraryScreenContainer('Agesilaus II'),
@@ -895,10 +761,10 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Alcaeus of Mytilene'),
+                              child:
+                                  libraryScreenContainer('Alcaeus of Mytilene'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -911,10 +777,10 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Alexander the Great'),
+                              child:
+                                  libraryScreenContainer('Alexander the Great'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -927,7 +793,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                             Divider(),
                             GestureDetector(
                               child: libraryScreenContainer('Anacreon'),
@@ -943,7 +808,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                             Divider(),
                             GestureDetector(
                               child: libraryScreenContainer('Anaxagoras'),
@@ -1021,7 +885,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             ),
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Aristippus of Cyrene'),
+                              child: libraryScreenContainer(
+                                  'Aristippus of Cyrene'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1087,7 +952,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             ),
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Bion of Borysthenes'),
+                              child:
+                                  libraryScreenContainer('Bion of Borysthenes'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1151,7 +1017,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
                                 );
                               },
                             ),
-
                           ],
                         ),
                       ),
@@ -1211,7 +1076,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                         content: Column(
                           children: <Widget>[
                             GestureDetector(
-                              child: libraryScreenContainer('Epicharmus of Kos'),
+                              child:
+                                  libraryScreenContainer('Epicharmus of Kos'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1424,7 +1290,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             ),
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Pittacus of Mytilene'),
+                              child: libraryScreenContainer(
+                                  'Pittacus of Mytilene'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1616,7 +1483,8 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             ),
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Theognis of Megara'),
+                              child:
+                                  libraryScreenContainer('Theognis of Megara'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1727,14 +1595,12 @@ Widget libraryScreenContainer(String text) {
   );
 }
 
-
 class StoicScreen extends StatefulWidget {
   @override
   _StoicScreenState createState() => _StoicScreenState();
 }
 
 class _StoicScreenState extends State<StoicScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1800,7 +1666,8 @@ class _StoicScreenState extends State<StoicScreen> {
                             ),
                             Divider(),
                             GestureDetector(
-                              child: libraryScreenContainer('Chrysippus of Soli'),
+                              child:
+                                  libraryScreenContainer('Chrysippus of Soli'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1816,7 +1683,6 @@ class _StoicScreenState extends State<StoicScreen> {
                           ],
                         ),
                       ),
-
                       StickyHeader(
                         header: stickyHeaderContainer('E'),
                         content: Column(
@@ -1843,7 +1709,8 @@ class _StoicScreenState extends State<StoicScreen> {
                         content: Column(
                           children: <Widget>[
                             GestureDetector(
-                              child: libraryScreenContainer('Gaius Musonius Rufus'),
+                              child: libraryScreenContainer(
+                                  'Gaius Musonius Rufus'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1859,7 +1726,6 @@ class _StoicScreenState extends State<StoicScreen> {
                           ],
                         ),
                       ),
-
                       StickyHeader(
                         header: stickyHeaderContainer('M'),
                         content: Column(
@@ -1886,7 +1752,8 @@ class _StoicScreenState extends State<StoicScreen> {
                         content: Column(
                           children: <Widget>[
                             GestureDetector(
-                              child: libraryScreenContainer('Seneca the Younger'),
+                              child:
+                                  libraryScreenContainer('Seneca the Younger'),
                               onTap: () {
                                 Navigator.push(
                                   context,
@@ -1942,50 +1809,52 @@ class QuotesPage extends StatefulWidget {
 
 class _QuotesPageState extends State<QuotesPage> {
   bool _isFavorite = false;
-  void toggleState(){
-    setState((){
-      if(_isFavorite){
+  void toggleState() {
+    setState(() {
+      if (_isFavorite) {
         _isFavorite = !_isFavorite;
-      }
-      else if(!_isFavorite){
+      } else if (!_isFavorite) {
         _isFavorite = !_isFavorite;
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
-
     QuotesData data = ModalRoute.of(context).settings.arguments;
     final List<String> quotes = data.getQuotes();
 
     return SafeArea(
       child: Scaffold(
-        body: ListView.separated(
-          padding: const EdgeInsets.all(8.0),
-          itemCount: quotes.length,
-          itemBuilder: (BuildContext context, int index){
-            return Padding(
-              padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-              child: Container(
-                child: Center(child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                      child: Text(quotes[index],
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontFamily: 'Garamond',
-                        fontSize: 20.0,
-                      ),
-                      )
-                    ),
-                    Divider(height: 15.0, color: Colors.transparent),
-                  ],
-                )),
-              ),
-            );
-          },
-        separatorBuilder: (BuildContext context, int index) => const Divider())),
+          body: ListView.separated(
+              padding: const EdgeInsets.all(8.0),
+              itemCount: quotes.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Padding(
+                  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+                  child: Container(
+                    child: Center(
+                        child: Column(
+                      children: <Widget>[
+                        Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 10.0),
+                            child: Text(
+                              quotes[index],
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontFamily: 'Garamond',
+                                fontSize: 20.0,
+                              ),
+                            )),
+                        Divider(height: 15.0, color: Colors.transparent),
+                      ],
+                    )),
+                  ),
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) =>
+                  const Divider())),
     );
 
 //      appBar: AppBar(title: Text('Quotes by $name')),
@@ -2030,8 +1899,3 @@ class _QuotesPageState extends State<QuotesPage> {
 //    );
   }
 }
-
-
-
-
-
